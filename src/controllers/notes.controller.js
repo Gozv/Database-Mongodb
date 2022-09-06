@@ -5,6 +5,7 @@ notesCtrl.renderNoteForm = (req, res) => {
 };
 
 notesCtrl.createNewNote = (req,res) =>{
+    console.log(req.body);
     res.send("new note");
 };
 
@@ -13,7 +14,7 @@ notesCtrl.renderNotes = (req,res) =>{
 };
 
 notesCtrl.renderEditForm = (req, res) =>{
-    res.send("render edit form");
+    res.render("notes/new-note");
 };
 
 notesCtrl.updateNote = (req,res) =>{
